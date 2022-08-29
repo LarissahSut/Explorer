@@ -150,9 +150,10 @@ fieldset {
   width: 100%;
 }
 
-legend p {
+fieldset .menor {
   font-size: 20px;
   line-height: 34px;
+  border: none;
 
 }
 
@@ -194,5 +195,4 @@ footer .button:hover {
 input:invalid {
   border: 2px solid rgb(197, 4, 4);
 }
-
 
