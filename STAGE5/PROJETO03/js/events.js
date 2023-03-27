@@ -2,9 +2,17 @@ import {
   buttonPause,
   buttonPlay,
   buttonSet,
-  buttonSoundOff,
-  buttonSoundOn,
+  buttonForestOff,
+  buttonForestOn,
+  buttonRainOff,
+  buttonRainOn,
+  buttonCoffeeOff,
+  buttonCoffeeOn,
+  buttonFireOff,
+  buttonFireOn,
   buttonStop,
+  buttonAdd,
+  buttonSub,
 } from "./elements.js";
 
 export default function ({ controls, timer, sound }) {
@@ -26,16 +34,62 @@ export default function ({ controls, timer, sound }) {
     sound.pressButton();
   });
 
-  buttonSoundOn.addEventListener("click", function () {
-    buttonSoundOn.classList.add("hide");
-    buttonSoundOff.classList.remove("hide");
-    sound.bgAudio.pause();
+  // SOUND
+
+  buttonForestOn.addEventListener("click", function () {
+    sound.pressButton();
+    buttonForestOn.classList.add("hide");
+    buttonForestOff.classList.remove("hide");
+    sound.forestAudio.pause();
   });
 
-  buttonSoundOff.addEventListener("click", function () {
-    buttonSoundOff.classList.add("hide");
-    buttonSoundOn.classList.remove("hide");
-    sound.bgAudio.play();
+  buttonForestOff.addEventListener("click", function () {
+    sound.pressButton();
+    buttonForestOff.classList.add("hide");
+    buttonForestOn.classList.remove("hide");
+    sound.forestAudio.play();
+  });
+
+  buttonRainOn.addEventListener("click", function () {
+    sound.pressButton();
+    buttonRainOn.classList.add("hide");
+    buttonRainOff.classList.remove("hide");
+    sound.rainAudio.pause();
+  });
+
+  buttonRainOff.addEventListener("click", function () {
+    sound.pressButton();
+    buttonRainOff.classList.add("hide");
+    buttonRainOn.classList.remove("hide");
+    sound.rainAudio.play();
+  });
+  
+  buttonCoffeeOn.addEventListener("click", function () {
+    sound.pressButton();
+    buttonCoffeeOn.classList.add("hide");
+    buttonCoffeeOff.classList.remove("hide");
+    sound.coffeeAudio.pause();
+  });
+
+  buttonCoffeeOff.addEventListener("click", function () {
+    sound.pressButton();
+    buttonCoffeeOff.classList.add("hide");
+    buttonCoffeeOn.classList.remove("hide");
+    sound.coffeeAudio.play();
+  });
+
+  buttonFireOn.addEventListener("click", function () {
+    sound.pressButton();
+    buttonFireOn.classList.add("hide");
+    buttonFireOff.classList.remove("hide");
+    sound.fireAudio.pause();
+  });
+
+  buttonFireOff.addEventListener("click", function () {
+    sound.pressButton();
+    buttonFireOff.classList.add("hide");
+    buttonFireOn.classList.remove("hide");
+    sound.fireAudio.play();
   });
 
   buttonSet.addEventListener("click", function () {
@@ -49,5 +103,13 @@ export default function ({ controls, timer, sound }) {
 
     timer.updateDisplay(newMinutes, 0);
     timer.updateMinutes(newMinutes);
+  });
+
+  buttonAdd.addEventListener("click", function () {
+    sound.pressButton();
+  });
+
+  buttonSub.addEventListener("click", function () {
+    sound.pressButton();
   });
 }

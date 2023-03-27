@@ -9,6 +9,8 @@ import {
   buttonSet,
   minutesDisplay,
   secondsDisplay,
+  buttonAdd,
+  buttonSub,
 } from "./elements.js";
 
 const controls = Controls({
@@ -16,6 +18,8 @@ const controls = Controls({
   buttonPlay,
   buttonSet,
   buttonStop,
+  // buttonAdd,
+  // buttonSub,
 });
 
 const timer = Timer({
