@@ -11,7 +11,7 @@ export default function () {
   const fireAudio = new Audio("assets/Lareira.wav");
 
   forestAudio.loop = true;
-  raindAudio.loop = true;
+  rainAudio.loop = true;
   coffeeAudio.loop = true;
   fireAudio.loop = true;
 

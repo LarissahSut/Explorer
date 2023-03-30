@@ -12,6 +12,7 @@ import {
   buttonFireOn,
   buttonStop,
   buttonAdd,
+  minutesDisplay,
   buttonSub,
 } from "./elements.js";
 
@@ -63,7 +64,7 @@ export default function ({ controls, timer, sound }) {
     buttonRainOn.classList.remove("hide");
     sound.rainAudio.play();
   });
-  
+
   buttonCoffeeOn.addEventListener("click", function () {
     sound.pressButton();
     buttonCoffeeOn.classList.add("hide");
@@ -107,9 +108,11 @@ export default function ({ controls, timer, sound }) {
 
   buttonAdd.addEventListener("click", function () {
     sound.pressButton();
+    timer.addMinutes();
   });
 
   buttonSub.addEventListener("click", function () {
     sound.pressButton();
+    timer.subMinutes();
   });
 }

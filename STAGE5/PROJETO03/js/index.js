@@ -10,7 +10,7 @@ import {
   minutesDisplay,
   secondsDisplay,
   buttonAdd,
-  buttonSub,
+  // buttonSub,
 } from "./elements.js";
 
 const controls = Controls({
@@ -18,7 +18,7 @@ const controls = Controls({
   buttonPlay,
   buttonSet,
   buttonStop,
-  // buttonAdd,
+  buttonAdd,
   // buttonSub,
 });
 
