@@ -12,7 +12,6 @@ import {
   buttonFireOn,
   buttonStop,
   buttonAdd,
-  minutesDisplay,
   buttonSub,
 } from "./elements.js";
 
@@ -49,6 +48,7 @@ export default function ({ controls, timer, sound }) {
     buttonForestOff.classList.add("hide");
     buttonForestOn.classList.remove("hide");
     sound.forestAudio.play();
+    
   });
 
   buttonRainOn.addEventListener("click", function () {
