@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color:#E5E5E5;
+  font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 465px;
+  background-color:  #293241;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+h1, h2, legend, button {
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+}
+
+#page {
+  width: 750px;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 100px;
+  text-align: center;
+  color: #fff;
+}
+
+header h1{
+  font-size: 36px;
+  line-height: 45px;
+}
+
+header img {
+  margin-top: 20px;
+}
+
+.title {
+  background-color:hsla(6, 89%, 69%, 1);
+  border-radius: 20px 20px 0 0;
+
+  width: 750px;
+  height: 138px;
+
+  margin-top: 32px;
+
+  text-align: center;
+
+}
+
+.title h2 {
+  padding: 50px;
+  color: #fff;
+  font-size: 24px;
+
+}
+
+form {
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+
+  margin-top: 0px;
+  margin-bottom: 390px;
+  padding: 64px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+fieldset {
+  border: none;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.fieldset-wrapper legend {
+  font-size: 24px;
+  line-height: 34px;
+  color: #253B51;
+  text-align: center;
+
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 10px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  width: 100%;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.input-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+  color: #4E4958;
+}
+
+.input-wrapper label span {
+  font-size: 12px;
+  line-height: 20px;
+  color: #C1BCCC;
+}
+
+.input-wrapper input, select, textarea {
+  background: #FAFAFC;
+  height: 55px;
+  width: 100%;
+
+  padding: 0 24px;
+
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #4E4958;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+
+.input-wrapper input:focus, select:focus, textarea:focus {
+  outline: none;
+
+}
+
+
+select {
+  width: 50%;
+}
+
+input[type=checkbox] {
+  width: 24px;
+  height: 24px;
+}
+
+textarea {
+  height: 165px;
+  max-width: 100%;
+  padding: 24px;
+  margin-top: 50px;
+  resize: none;
+}
+
+.col-1-2 {
+  width: 50%;
+}
+.col-2 {
+  display: flex;
+  gap: 22px;
+}
+
+.col-23 {
+  display: flex;
+  gap: 32px;
+}
+
+.col-22 {
+  display: flex;
+  gap: 10px;
+}
+
+
+.col-22 div, .col-23 div {
+  width: 100%;
+}
+
+button {
+  color:#fff;
+  background-color: #F67669;
+  text-align: center;
+  font-size: 20px;
+
+  margin-top: 60px;
+  padding: 15px 40px;
+  
+  border-radius: 8px;
+  border: none;
+}
+
+button:hover, button:focus {
+  background-color: #d3665a;
+}

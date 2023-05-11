@@ -5,12 +5,12 @@
 }
 
 :root {
-  --bg-color: #121214;
+  --bg-color: #ffffff;
 
   --base-color: 194;
   --primary-color: hsl(var(--base-color), 100%, 63%);
   --bg-primary-light: hsla(var(--base-color), 100%, 63%, 0.13);
-  --text-color: #ffffff;
+  --text-color: #323238;
   font-size: 62.5%;
 }
 
@@ -19,14 +19,17 @@ body {
   color: var(--text-color);
 
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  display: grid;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-evenly;
   min-height: 100vh;
 }
 
 main {
-  justify-self: center;
-  align-self: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
@@ -37,7 +40,7 @@ button {
 }
 
 button svg {
-  width: clmap(3.2rem, 2rem + 12vw, 6.4rem);
+  width: clamp(3.2rem, 2rem + 12vw, 6.4rem);
 }
 
 .hide {
@@ -46,32 +49,40 @@ button svg {
 
 .play svg path,
 .pause svg path,
-.sound-on svg path {
-  fill: var(--primary-color);
+.sound-on svg path,
+.set svg path,
+.stop svg path {
+  fill: var(--text-color);
 }
 
 #timer {
-  font-size: 8.8rem;
+  font-size: 12.5rem;
   display: flex;
   margin-bottom: 1.6rem;
 }
 
 #controls {
-  background-color: var(--bg-primary-light);
-
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3.2rem;
-
-  border-radius: 9999px;
+  gap: 2.7rem;
 
   width: clamp(10rem, 10rem + 30vw, 22.8rem);
   height: clamp(8rem, 1rem + 10vw, 10.8rem);
 }
 
 footer {
-  justify-self: end;
-  align-self: end;
-  padding: 0 4rem 3.2rem 0;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+
+  width: 33rem;
+
+  flex-wrap: wrap;
+  gap: 3rem;
+
+}
+
+footer button svg {
+  width: 14rem;
 }

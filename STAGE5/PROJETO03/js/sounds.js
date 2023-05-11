@@ -5,11 +5,15 @@ export default function () {
   const kitchenTimer = new Audio(
     "https://github.com/maykbrito/automatic-video-creator/blob/master/audios/kichen-timer.mp3?raw=true"
   );
-  const bgAudio = new Audio(
-    "https://github.com/maykbrito/automatic-video-creator/blob/master/audios/bg-audio.mp3?raw=true"
-  );
+  const forestAudio = new Audio("assets/Floresta.wav");
+  const rainAudio = new Audio("assets/Chuva.wav");
+  const coffeeAudio = new Audio("assets/Cafeteria.wav");
+  const fireAudio = new Audio("assets/Lareira.wav");
 
-  bgAudio.loop = true;
+  forestAudio.loop = true;
+  rainAudio.loop = true;
+  coffeeAudio.loop = true;
+  fireAudio.loop = true;
 
   function pressButton() {
     buttonPressAudio.play();
@@ -22,6 +26,9 @@ export default function () {
   return {
     pressButton,
     timeEnd,
-    bgAudio,
+    forestAudio,
+    rainAudio,
+    coffeeAudio,
+    fireAudio,
   };
 }

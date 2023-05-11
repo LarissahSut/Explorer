@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #c4c4cc;
+}
+
+/* General */
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 85vh;
+  position: static;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 72px 40px;
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  transform: scale(1.02);
+  font-weight: 700;
+  color: white;
+}
+
+#app {
+  margin: 0 100px;
+}
+
+#app h1 {
+  color: hsla(240, 9%, 89%, 1);
+  font-weight: 700;
+  font-size: 48px;
+}
+
+#app p {
+  font-size: 18px;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  width: 195px;
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #02799d;
+  cursor: pointer;
+}
+
+/* HOME */
+
+.center {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 16px;
+}
+
+.left h1 {
+  line-height: 125%;
+}
+
+.left p {
+  width: 650px;
+  line-height: 160%;
+}
