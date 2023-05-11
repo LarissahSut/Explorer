@@ -15,6 +15,18 @@ export default function Timer({
     secondsDisplay.textContent = String(seconds).padStart(2, "0");
   }
 
+  function addMinutes() {
+    let newMinutes = Number(minutesDisplay.textContent) + 5;
+    let seconds = Number(secondsDisplay.textContent);
+    updateDisplay(newMinutes, seconds);
+  }
+
+  function subMinutes() {
+    let newMinutes = Number(minutesDisplay.textContent) - 5;
+    let seconds = Number(secondsDisplay.textContent);
+    updateDisplay(newMinutes, seconds);
+  }
+
   function reset() {
     updateDisplay(minutes, 0);
     clearTimeout(timerTimeOut);
@@ -60,5 +72,7 @@ export default function Timer({
     updateDisplay,
     updateMinutes,
     hold,
+    addMinutes,
+    subMinutes,
   };
 }
